@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year 3 Blueprint: Production Projects, Cloud & Internships | CyberRoadmap</title>
+    <meta name="description"
+        content="Master Year 3: Building distributed microservices, Docker CI/CD cloud deployment on AWS, and cracking high-stipend tier-1 internships.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300f0ff'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+</head>
+
+<body data-page="year3">
+
+    <!-- Interactive Cyber Canvas -->
+    <canvas id="bg-canvas"></canvas>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-area">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                </div>
+                <span class="logo-text">CYBER<span>ROADMAP</span></span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="index.html">Overview</a></li>
+                    <li class="nav-item"><a href="year1.html">Year 1: Fundamentals</a></li>
+                    <li class="nav-item"><a href="year2.html">Year 2: DSA & Coding</a></li>
+                    <li class="nav-item active"><a href="year3.html">Year 3: Projects & Cloud</a></li>
+                    <li class="nav-item"><a href="year4.html">Year 4: Placements</a></li>
+                    <li class="nav-item"><a href="strategies.html" class="nav-cta">Master Strategies</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="badge-tag">PHASE 03 // YEAR 3 BLUEPRINT</span>
+            <h1 class="hero-title" style="font-size: clamp(2.2rem, 4vw, 3.5rem);">
+                The Builder: <span class="gradient-text">Production Projects & Internships</span>
+            </h1>
+            <p class="hero-subtitle">
+                Generic todo-lists and YouTube clone tutorials belong in the trash. Year 3 is about architecting
+                distributed,
+                containerized systems with caching, queues, and cloud deployment—turning your resume into an
+                irresistible magnet for recruiters.
+            </p>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <span class="year-pill">Duration: Months 25 - 36</span>
+                <span class="package-target-badge">Goal: Tier-1 Summer Internship (50k-1.5L/mo stipend)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Layout -->
+    <main class="container section-padding">
+        <div class="detail-grid">
+            <!-- Left Column -->
+            <div class="main-content-col">
+
+                <!-- Module 1: The Death of Tutorial Clones -->
+                <div class="content-block">
+                    <h2 class="content-block-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v12.42a1.78 1.78 0 0 0 2.5 1.55L16.5 14.6a1.78 1.78 0 0 0 0-3.2z">
+                            </path>
+                        </svg>
+                        1. Why 95% of College Resumes Get Screened Out
+                    </h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+                        When an engineering manager opens a resume and sees "E-commerce Bookstore", "Netflix Clone", or
+                        "Weather App with OpenWeather API",
+                        they immediately discard it. These prove only that you can follow a tutorial, not that you can
+                        solve real engineering problems.
+                    </p>
+
+                    <div
+                        style="background: rgba(239, 68, 68, 0.05); border: 1px solid rgba(239, 68, 68, 0.2); padding: 1.25rem; border-radius: 12px; margin-bottom: 1.5rem;">
+                        <h4 style="color: #f87171; margin-bottom: 0.5rem;">What High-Package Interviewers Actually Care
+                            About:</h4>
+                        <ul style="color: #cbd5e1; font-size: 0.9rem; margin-left: 1.25rem; line-height: 1.6;">
+                            <li><strong>Concurrency & State:</strong> What happens when 1,000 users click the buy button
+                                simultaneously? How do you prevent double bookings?</li>
+                            <li><strong>Caching Layers:</strong> How do you use Redis to reduce database queries from
+                                120ms to 4ms?</li>
+                            <li><strong>Asynchronous Pipelines:</strong> How do you offload heavy operations (emails,
+                                PDF generation, AI inferences) using RabbitMQ or Apache Kafka?</li>
+                            <li><strong>Production Observability:</strong> How do you log, monitor errors, and handle
+                                graceful degradation when downstream APIs fail?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Module 2: Tier-1 Capstone Project Ideas -->
+                <div class="content-block">
+                    <h2 class="content-block-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                        2. Three Bulletproof Tier-1 Capstone Architectures
+                    </h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+                        Pick one or two of these architectures and build them to production standard. Host live working
+                        demos and document the architecture with Mermaid diagrams in your GitHub README.
+                    </p>
+
+                    <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+                        <!-- Project 1 -->
+                        <div
+                            style="background: rgba(255,255,255,0.02); border: 1px solid rgba(0, 240, 255, 0.2); border-radius: 12px; padding: 1.25rem;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <h4 style="color: var(--cyan-neon); font-size: 1.15rem;">Project A: Distributed Event
+                                    Notification & Webhook Engine</h4>
+                                <span class="skill-tag">Microservices</span>
+                            </div>
+                            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.8rem;">
+                                A multi-tenant system that processes millions of incoming webhook events, deduplicates
+                                payloads, buffers them in Kafka, and dispatches them with exponential backoff retries.
+                            </p>
+                            <div style="font-size: 0.8rem; color: #cbd5e1; font-family: var(--font-mono);">
+                                Stack: Go or Node.js • Apache Kafka • Redis • PostgreSQL • Docker
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div
+                            style="background: rgba(255,255,255,0.02); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 1.25rem;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <h4 style="color: var(--blue-electric); font-size: 1.15rem;">Project B: High-Throughput
+                                    API Gateway & Rate Limiter</h4>
+                                <span class="skill-tag">Cloud & Systems</span>
+                            </div>
+                            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.8rem;">
+                                A reverse proxy that authenticates JWTs, routes requests to microservices, and enforces
+                                token-bucket and sliding-window rate limiting per IP and client API key.
+                            </p>
+                            <div style="font-size: 0.8rem; color: #cbd5e1; font-family: var(--font-mono);">
+                                Stack: Go / Rust / Node.js • Redis Lua Scripts • Prometheus Metrics • Docker
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div
+                            style="background: rgba(255,255,255,0.02); border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 12px; padding: 1.25rem;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <h4 style="color: var(--violet-ai); font-size: 1.15rem;">Project C: Real-Time
+                                    Collaborative Canvas / Code Sandbox</h4>
+                                <span class="skill-tag">Full-Stack Realtime</span>
+                            </div>
+                            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.8rem;">
+                                Multiplayer collaborative editor implementing Conflict-free Replicated Data Types (CRDTs
+                                / Yjs) or Operational Transformation over WebSockets with live cursor broadcasting.
+                            </p>
+                            <div style="font-size: 0.8rem; color: #cbd5e1; font-family: var(--font-mono);">
+                                Stack: React/TypeScript • WebSocket Server • Redis Pub/Sub • Docker
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 3: Cloud & DevOps Pipeline -->
+                <div class="content-block">
+                    <h2 class="content-block-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                        </svg>
+                        3. The DevOps & Cloud Deployment Flywheel
+                    </h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+                        A project running only on <code>localhost:3000</code> does not count. You must deliver a live
+                        URL with custom domain, SSL certification, and automated deployment pipelines.
+                    </p>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+                        <div style="background: rgba(255,255,255,0.03); padding: 1.2rem; border-radius: 10px;">
+                            <h4 style="color: var(--cyan-neon); margin-bottom: 0.4rem;">Multi-Stage Docker</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">
+                                Minimize container size by stripping build dependencies, optimizing layers, and running
+                                as a non-root user.
+                            </p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.03); padding: 1.2rem; border-radius: 10px;">
+                            <h4 style="color: var(--blue-electric); margin-bottom: 0.4rem;">GitHub Actions CI/CD</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">
+                                Trigger lint checks, test suites, automated Docker image build, and deploy straight to
+                                production on <code>git push</code>.
+                            </p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.03); padding: 1.2rem; border-radius: 10px;">
+                            <h4 style="color: var(--violet-ai); margin-bottom: 0.4rem;">AWS / Cloud Infra</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">
+                                Configure AWS EC2, S3 asset buckets, CloudFront CDN, and NGINX reverse proxies with
+                                Let's Encrypt SSL.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 4: The Internship Outreach Engine -->
+                <div class="content-block">
+                    <h2 class="content-block-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        4. The Cold Outreach System for Tier-1 Internships
+                    </h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+                        Do not rely solely on college on-campus recruitment cells. Off-campus opportunities at
+                        fast-growing Series A/B
+                        startups and top tech companies often pay 3x to 5x higher stipends and convert directly into
+                        Pre-Placement Offers (PPOs).
+                    </p>
+
+                    <div
+                        style="background: rgba(0, 240, 255, 0.03); border-left: 3px solid var(--cyan-neon); padding: 1.2rem; border-radius: 0 10px 10px 0;">
+                        <strong style="color: #fff;">The 4-Sentence High-Conversion Cold Email Formula:</strong>
+                        <div
+                            style="margin-top: 0.6rem; font-family: var(--font-mono); font-size: 0.85rem; color: #cbd5e1; line-height: 1.6;">
+                            "Hi [Name], loved your recent tech blog on [Specific Architecture Detail].<br><br>
+                            I noticed your team handles heavy WebSocket traffic. I recently built a distributed event
+                            notification pipeline with Kafka & Redis capable of handling 50k concurrent events with
+                            sub-20ms latency.<br><br>
+                            Live Demo: [Link] | Architecture Repo: [GitHub Link]<br><br>
+                            I would love to contribute to your engineering team as a Summer SDE intern. Are you open to
+                            a brief 10-minute chat?"
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Checklist for Year 3 -->
+                <div class="content-block">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                        <h2 class="content-block-title" style="margin-bottom: 0;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="9 11 12 14 22 4"></polyline>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                            </svg>
+                            Year 3 Progress Tracker
+                        </h2>
+                        <span id="progress-percent"
+                            style="font-family: var(--font-mono); font-weight: 700; color: var(--cyan-neon);">0%
+                            Complete</span>
+                    </div>
+
+                    <div
+                        style="height: 6px; width: 100%; background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; margin-bottom: 1.5rem;">
+                        <div id="progress-bar-fill"
+                            style="height: 100%; width: 0%; background: linear-gradient(90deg, var(--cyan-neon), var(--blue-electric)); transition: width 0.3s ease;">
+                        </div>
+                    </div>
+
+                    <div class="checklist-item" data-id="y3_1">
+                        <div class="checklist-checkbox"></div>
+                        <div>
+                            <div class="item-title">Architect 2 Distributed Full-Stack Applications</div>
+                            <div class="item-desc">Include caching (Redis), relational DB (Postgres), and asynchronous
+                                message queues (Kafka/RabbitMQ).</div>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item" data-id="y3_2">
+                        <div class="checklist-checkbox"></div>
+                        <div>
+                            <div class="item-title">Dockerize All Services & Set Up CI/CD via GitHub Actions</div>
+                            <div class="item-desc">Ensure zero manual deployment. Every push triggers tests and deploys
+                                seamlessly to cloud infrastructure.</div>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item" data-id="y3_3">
+                        <div class="checklist-checkbox"></div>
+                        <div>
+                            <div class="item-title">Deploy Projects Live with Custom Domains & HTTPS</div>
+                            <div class="item-desc">No localhost screenshots on resumes. Provide live interactive links
+                                that interviewers can inspect.</div>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item" data-id="y3_4">
+                        <div class="checklist-checkbox"></div>
+                        <div>
+                            <div class="item-title">Compete in at Least 2 National/Global Hackathons</div>
+                            <div class="item-desc">Participate in Smart India Hackathon, ETHGlobal, or Major League
+                                Hacking (MLH) to demonstrate teamwork under crunch time.</div>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item" data-id="y3_5">
+                        <div class="checklist-checkbox"></div>
+                        <div>
+                            <div class="item-title">Craft an ATS-Proof One-Page Technical Resume</div>
+                            <div class="item-desc">Use the Jake's Resume format or Deedy CV with quantifiable metric
+                                bullets ("Reduced API response time by 48%").</div>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item" data-id="y3_6">
+                        <div class="checklist-checkbox"></div>
+                        <div>
+                            <div class="item-title">Send 50+ Personalized Cold Outreach Messages</div>
+                            <div class="item-desc">Target startup founders, tech leads, and alumni on LinkedIn and
+                                Twitter with custom demos.</div>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item" data-id="y3_7">
+                        <div class="checklist-checkbox"></div>
+                        <div>
+                            <div class="item-title">Secure & Complete a High-Stipend Summer SDE Internship</div>
+                            <div class="item-desc">Work in production systems, write readable pull requests, and aim for
+                                a Pre-Placement Offer (PPO).</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Sticky Sidebar -->
+            <aside class="sticky-sidebar">
+
+                <div class="sidebar-card">
+                    <h3 class="sidebar-card-title">Year 3 KPI Targets</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.9rem;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: var(--text-muted);">Deployed Projects</span>
+                            <span style="color: var(--cyan-neon); font-weight: 600;">2-3 Live Apps</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: var(--text-muted);">Docker & Cloud</span>
+                            <span style="color: var(--cyan-neon); font-weight: 600;">Full CI/CD</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: var(--text-muted);">Cold Outreach</span>
+                            <span style="color: var(--cyan-neon); font-weight: 600;">50+ Contacts</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: var(--text-muted);">Summer Internship</span>
+                            <span style="color: var(--cyan-neon); font-weight: 600;">Secured</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="sidebar-card-title">Engineering Project Stack</h3>
+                    <ul class="resource-list">
+                        <li class="resource-item">
+                            <a href="https://www.docker.com/" target="_blank" rel="noopener">
+                                Docker Containers
+                            </a>
+                            <span class="resource-type">DevOps</span>
+                        </li>
+                        <li class="resource-item">
+                            <a href="https://redis.io/" target="_blank" rel="noopener">
+                                Redis In-Memory Cache
+                            </a>
+                            <span class="resource-type">Database</span>
+                        </li>
+                        <li class="resource-item">
+                            <a href="https://kafka.apache.org/" target="_blank" rel="noopener">
+                                Apache Kafka Streaming
+                            </a>
+                            <span class="resource-type">Messaging</span>
+                        </li>
+                        <li class="resource-item">
+                            <a href="https://docs.github.com/en/actions" target="_blank" rel="noopener">
+                                GitHub Actions CI/CD
+                            </a>
+                            <span class="resource-type">CI/CD</span>
+                        </li>
+                        <li class="resource-item">
+                            <a href="https://aws.amazon.com/free/" target="_blank" rel="noopener">
+                                AWS Free Tier
+                            </a>
+                            <span class="resource-type">Cloud</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card" style="border-color: rgba(59, 130, 246, 0.4);">
+                    <span
+                        style="font-size: 0.75rem; color: var(--blue-electric); font-family: var(--font-mono); font-weight: 700;">UP
+                        NEXT</span>
+                    <h4 style="font-size: 1.1rem; color: #fff; margin: 0.4rem 0 0.8rem;">Year 4: Interview Cracking &
+                        45+ LPA Offers</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                        The final stretch: Master System Design (HLD/LLD), conduct mock interviews with FAANG engineers,
+                        and negotiate maximum compensation packages.
+                    </p>
+                    <a href="year4.html" class="btn btn-primary"
+                        style="width: 100%; padding: 0.65rem 1rem; font-size: 0.9rem;">
+                        Go to Year 4 Blueprint &rarr;
+                    </a>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 CyberRoadmap Engineering Architecture. Year 3 Builder Blueprint.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
